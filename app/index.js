@@ -1,3 +1,8 @@
-/**
- * Created by SG0220984 on 1/31/2015.
- */
+var React = require('react');
+var Router = require('react-router');
+var Routes = require('./routes');
+
+
+Router.run(Routes, function (Handler) {
+    React.render(<Handler/>, document.body);
+});
