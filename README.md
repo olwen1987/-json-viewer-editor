@@ -1,2 +1,2 @@
-# -json-viewer-editor
-Editor to edit JSON files and save them
+# json-viewer-editor
+This is a web editor for editing and saving Json files
