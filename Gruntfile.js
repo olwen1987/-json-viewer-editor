@@ -4,7 +4,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('build', ['browserify','uglify']);
+    //grunt.registerTask('build', ['browserify','uglify']);
+    grunt.registerTask('build', ['browserify']);
     grunt.registerTask('default', ['build', 'concurrent:default']);
     grunt.registerTask('serve', ['connect:server']);
     return grunt.initConfig({
