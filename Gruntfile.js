@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         connect: {
             server: {
                 options: {
-                    port: 80200,
+                    port: 8020,
                     keepalive: true,
                     livereload: true,
                     base: ['public']
@@ -46,7 +46,8 @@ module.exports = function (grunt) {
         browserify: {
             dist: {
                 files: {
-                    'public/js/bundle.js': ['app/**/*.js']
+                    'public/js/bundle.js': ['app/**/*.js'],
+                    'public/css/index.css': ['app/**/*.css']
                 },
                 options: {}
             }

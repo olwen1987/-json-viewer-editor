@@ -1,8 +1,8 @@
 var React = require('react');
-var jQuery = require('jquery');
 var _ = require('lodash');
 
 var ControlButtons = require("./control-buttons");
+var JSONRow = require("./json-row");
 
 
 var JSONFileUpload = React.createClass({
@@ -35,13 +35,19 @@ var JSONFileUpload = React.createClass({
     handleObject: function (input) {
         var that = this;
         var keys = _.keysIn(input);
+
         return keys.map(function (key) {
-            return (<tr className="new-row">
-                <td className="key">{key}</td>
-                <td className="value">{that.processInputData(input[key])}<ControlButtons/></td>
-            </tr>
+            return (<JSONRow id={key}
+                             value={that.processInputData(input[key])}/>
             )
         });
+    },
+    _dataChangeHandler(){
+        console.log('called');
+    },
+
+    _editHandler(){
+
     },
     handleArray: function (input) {
         var that = this;

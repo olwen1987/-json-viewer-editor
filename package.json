@@ -65,5 +65,8 @@
       "browserify-shim",
       "reactify"
     ]
+  },
+  "devDependencies": {
+    "react": "^0.12.2"
   }
 }

@@ -1,21 +1,19 @@
-@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
-@import "../../node_modules/font-awesome/css/font-awesom.css";
 
-.key{
-    text-transform: capitalize;
-    color:blue;
-    font-weight: bold;
-}
+/*.key{*/
+    /*text-transform: capitalize;*/
+    /*color:blue;*/
+    /*font-weight: bold;*/
+/*}*/
 
-.value{
-    text-transform: capitalize;
-    color:brown;
-}
+/*.value{*/
+    /*text-transform: capitalize;*/
+    /*color:brown;*/
+/*}*/
 
-.btn{
-    border-radius:2px;
-}
+/*.btn{*/
+    /*border-radius:2px;*/
+/*}*/
 
-.control-buttons{
-    /*float:right;*/
-}
+/*.control-buttons{*/
+    /*!*float:right;*!*/
+/*}*/
